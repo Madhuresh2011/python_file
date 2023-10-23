@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form </title>
+  <style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 5rem 0;
+    background-image: url(backgroud.jpg);
+    background-color: #00e617;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+}
+  </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2> Choise Form </h2>
+        <div class="form-wrapper">
+            <form action="">
+                <div class="form-group">
+                    <label for="name"> Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email"> Email: </label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group gender">
+                    Gender:
+                    <div class="genderDiv">
+                        <input type="radio" name="gender" id="male"><label for="gender"> Male </label>
+                        <input type="radio" name="gender" id="female"><label for="gender"> Female </label>
+                        <input type="radio" name="gender" id="custom"><label for="gender"> Custom</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="hear" id="hear"> `Which is your Favorite social media... </label>
+                    <select>
+                        <option class="transparent" value="Instagram"> Instagram </option>
+                        <option class="transparent" value="Facebook"> Facebook </option>
+                        <option class="transparent" value="friends"> Whatsapp </option>
+                        <option class="transparent" value="googleSearch"> Snapchat</option>
+                        <option class="transparent" value="Randomly"> Twitter </option>
+                        <option class="transparent" value="other"> other </option>
+                    </select>
+                </div>
+                <div class="form-group flex">
+                    <label for=""> Will you recommend for any  improvement ? </label>
+                    <div class="recommendation">
+                        <input type="radio" name="recommend" id="yes"><label for="yes"> Yes </label>
+                        <input type="radio" name="recommend" id="no"><label for="no"> No </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lang"> Favorite place</label>
+                    <div class="box">
+                        <input type="checkbox" name="place" id=" Delhi"> <label for="Delhi"> Delhi </label>
+                        <input type="checkbox" name="place" id="bihar"> <label for="bihar"> Bihar </label>
+                        <input type="checkbox" name="place" id="mumbai"> <label for="mumbai"> Mumbai </label>
+                        <input type="checkbox" name="place" id="up"> <label for="up"> Uttarprdesh </label>
+                        <input type="checkbox" name="place" id="jk"> <label for="jk"> Jammu & kashmir </label>
+                        <input type="checkbox" name="place" id="uk"> <label for="uk"> Uttrakhand </label>
+                        <input type="checkbox" name="place" id="Gujrat"> <label for="Gujrat">Gujrat</label>
+                    </div>
+                </div>
+                <div class="form-group flex">
+                    <label for="suggestions"> Why you visit there and in which season ? </label>
+                    <textarea name="suggestions" id="suggestions" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit"> Submit </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
